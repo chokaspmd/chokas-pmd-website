@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenant Portal — Chokas PMD Group LLC</title>
+  <meta name="description" content="Access your lease agreements, payments, design documents, and maintenance requests.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Minimal nav for portal -->
+  <nav class="nav scrolled" style="position: relative;">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Chokas PMD Group<small>LLC</small></a>
+      <div class="nav-links">
+        <a href="index.html">Back to Main Site</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Portal Login -->
+  <section class="portal-login">
+    <div class="portal-login-card">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <div class="nav-logo" style="display: inline-block;">Chokas PMD Group<small>LLC</small></div>
+      </div>
+      <h2 style="text-align: center;">Tenant Portal</h2>
+      <p style="text-align: center; margin-bottom: 32px; font-size: 0.9rem;">Access your lease agreements, payments, design documents, and maintenance requests.</p>
+
+      <form data-form="portal-login">
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="form-submit">Sign In <span class="arrow">&rarr;</span></button>
+      </form>
+
+      <div style="text-align: center; margin-top: 24px;">
+        <a href="#" style="font-size: 0.85rem; color: var(--text-muted); transition: color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Forgot your password?</a>
+      </div>
+
+      <div style="margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border);">
+        <p style="font-size: 0.8rem; text-align: center; color: var(--text-muted); margin-bottom: 20px;">Quick Access</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <a href="#" class="btn btn-outline" style="font-size: 0.7rem; padding: 14px 16px; text-align: center; justify-content: center;">
+            <span>&#128196;</span> Pay Rent
+          </a>
+          <a href="#" class="btn btn-outline" style="font-size: 0.7rem; padding: 14px 16px; text-align: center; justify-content: center;">
+            <span>&#128203;</span> Documents
+          </a>
+          <a href="#" class="btn btn-outline" style="font-size: 0.7rem; padding: 14px 16px; text-align: center; justify-content: center;">
+            <span>&#128295;</span> Maintenance
+          </a>
+          <a href="#" class="btn btn-outline" style="font-size: 0.7rem; padding: 14px 16px; text-align: center; justify-content: center;">
+            <span>&#128222;</span> Contact
+          </a>
+        </div>
+      </div>
+
+      <div class="portal-back" style="margin-top: 32px;">
+        <a href="index.html">&larr; Back to chokaspmd.com</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

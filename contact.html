@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Chokas PMD Group LLC</title>
+  <meta name="description" content="Schedule a free consultation with Chokas PMD Group. Light industrial development in Dallas Fort Worth.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Chokas PMD Group<small>LLC</small></a>
+      <div class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="portal.html" class="nav-portal">Tenant Portal</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Contact Section (no hero — straight to form, matching Airo's asymmetric layout) -->
+  <section class="consultation" style="padding-top: 160px;">
+    <div class="container">
+      <div class="consultation-grid">
+        <div class="consultation-left">
+          <span class="label fade-up">Start Your Project</span>
+          <h1 class="fade-up delay-1" style="font-size: clamp(2.5rem, 5vw, 4rem);">Let's Build<br>Something<br><span class="text-accent">Together.</span></h1>
+          <p class="lead fade-up delay-2">Whether you're an investor, business owner, or developer — our team is ready to walk you through the entire process. No pressure. Just clarity.</p>
+
+          <div class="fade-up delay-3" style="margin-top: 48px;">
+            <div class="footer-contact">
+              <div class="footer-contact-item" style="color: var(--text-primary); font-size: 1rem; margin-bottom: 20px;">
+                <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--accent);"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+                (214) 431-4660
+              </div>
+              <div class="footer-contact-item" style="color: var(--text-primary); font-size: 1rem; margin-bottom: 20px;">
+                <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--accent);"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                info@chokaspmd.com
+              </div>
+              <div class="footer-contact-item" style="color: var(--text-primary); font-size: 1rem; margin-bottom: 20px;">
+                <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--accent);"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                101 NW 8th St, Grand Prairie, TX 75050
+              </div>
+              <div class="footer-contact-item" style="color: var(--text-secondary); font-size: 0.9rem;">
+                <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--text-muted);"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                Monday - Friday, 9:00 AM - 5:00 PM
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up delay-2">
+          <form data-form="contact">
+            <h4 style="margin-bottom: 8px;">Schedule a Free Consultation</h4>
+            <p style="margin-bottom: 24px; font-size: 0.9rem;">Tell us about your project and we'll connect you with the right team member within 24 hours.</p>
+            <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+            <div class="form-group"><input type="email" placeholder="Email Address" required></div>
+            <div class="form-group"><input type="tel" placeholder="Phone Number"></div>
+            <div class="form-group">
+              <select style="width: 100%; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); color: var(--text-muted); font-family: var(--font-body); font-size: 0.95rem; outline: none; cursor: pointer;">
+                <option value="">What are you interested in?</option>
+                <option value="development">Light Industrial Development</option>
+                <option value="management">Property Management</option>
+                <option value="investment">Investment Opportunities</option>
+                <option value="parking">Equipment / Truck Parking</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+            <div class="form-group"><textarea placeholder="Tell us about your project..."></textarea></div>
+            <button type="submit" class="form-submit">Send Request <span class="arrow">&rarr;</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map placeholder -->
+  <section style="padding: 0; height: 400px; background: var(--bg-card); display: flex; align-items: center; justify-content: center;">
+    <div style="text-align: center;">
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">101 NW 8th St, Grand Prairie, TX 75050</p>
+      <a href="https://maps.google.com/?q=101+NW+8th+St+Grand+Prairie+TX+75050" target="_blank" class="btn-text" style="color: var(--accent);">Open in Google Maps <span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">Chokas PMD Group<small>LLC</small></div>
+          <p>Dallas Fort Worth's premier light industrial developer. We build from the ground up — delivering precision, transparency, and results for every client.</p>
+        </div>
+        <div class="footer-col"><h4>Company</h4><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Tenants</h4><a href="portal.html">Tenant Portal</a><a href="portal.html">Pay Rent</a><a href="portal.html">View Documents</a><a href="portal.html">Maintenance Request</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Chokas PMD Group LLC. All rights reserved.</span>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
