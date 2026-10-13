@@ -167,16 +167,16 @@ p.lead { font-size: 1.125rem; max-width: 560px; }
   line-height: 1;
 }
 .nav-logo img {
-  height: 36px;
+  height: 41.4px; /* +15% (was 36px), 2026-10-13 */
   width: auto;
   display: block;
   transition: opacity 0.3s var(--ease);
 }
-.nav.scrolled .nav-logo img { height: 32px; }
+.nav.scrolled .nav-logo img { height: 36.8px; } /* +15% (was 32px) */
 .nav-logo:hover img { opacity: 0.85; }
 
-.footer-brand .nav-logo img { height: 44px; margin-bottom: 8px; }
-.portal-login-card .nav-logo img { height: 48px; margin: 0 auto; }
+.footer-brand .nav-logo img { height: 50.6px; /* +15% (was 44px) */ margin-bottom: 8px; }
+.portal-login-card .nav-logo img { height: 55.2px; /* +15% (was 48px) */ margin: 0 auto; }
 .nav-links {
   display: flex;
   align-items: center;
@@ -1045,3 +1045,6 @@ p.lead { font-size: 1.125rem; max-width: 560px; }
     border-bottom: 1px solid var(--border);
   }
 }
+
+/* --- Homepage hero headline 25% smaller (2026-10-13): was clamp(3.5rem, 8vw, 7rem) via h1 --- */
+.hero h1 { font-size: clamp(2.625rem, 6vw, 5.25rem); }
