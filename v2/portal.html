@@ -3,12 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Portal — Chokas PMD Group LLC</title>
-  <meta name="description" content="Access your lease agreements, payments, design documents, and maintenance requests.">
+  <title>Customer Portal | Chokas PMD Group LLC</title>
+  <meta name="description" content="Sign in to your Chokas PMD project portal, powered by JobTread: proposals, invoices, documents, photos, schedule and messages in one place.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    /* Customer portal (JobTread). JobTread blocks being framed (frame-ancestors 'self'),
+       so sign-in opens app.jobtread.com in a new tab; this page never collects passwords. */
+    .portal-login-card { max-width: 560px; }
+    .jt-signin { width: 100%; justify-content: center; margin-top: 8px; }
+    .jt-note { font-size: 0.85rem; text-align: center; color: var(--text-muted); margin-top: 18px; line-height: 1.6; }
+    .jt-note a, .jt-links a { color: var(--accent-light); }
+    .jt-note a:hover, .jt-links a:hover { color: #fff; }
+    .jt-features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+    .jt-feature { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border: 1px solid var(--border); background: var(--bg-card); transition: border-color 0.3s; }
+    .jt-feature:hover { border-color: var(--border-accent); }
+    .jt-feature b { display: block; font-family: var(--font-heading); font-weight: 600; font-size: 0.95rem; color: var(--text-primary); margin-bottom: 2px; }
+    .jt-feature span { font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; }
+    .jt-feature i { font-style: normal; font-size: 1.15rem; line-height: 1; margin-top: 2px; }
+    .jt-section { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .jt-section h3 { font-size: 1.05rem; text-align: center; margin-bottom: 6px; }
+    .jt-section > p { font-size: 0.85rem; text-align: center; color: var(--text-muted); }
+    .jt-video { position: relative; padding-top: 56.25%; margin-top: 16px; border: 1px solid var(--border); }
+    .jt-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .jt-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; margin-top: 16px; font-size: 0.82rem; }
+    .jt-badge { display: block; max-width: 220px; margin: 28px auto 0; opacity: 0.85; transition: opacity 0.3s; }
+    .jt-badge:hover { opacity: 1; }
+    .jt-badge img { width: 100%; height: auto; }
+    @media (max-width: 520px) {
+      .portal-login { padding: 16px; }
+      .portal-login-card { padding: 36px 20px; }
+      .jt-features { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -22,48 +51,58 @@
     </div>
   </nav>
 
-  <!-- Portal Login -->
+  <!-- Customer Portal (JobTread) -->
   <section class="portal-login">
     <div class="portal-login-card">
       <div style="text-align: center; margin-bottom: 40px;">
         <div class="nav-logo" style="display: inline-block;"><img src="assets/images/chokas-logo.png" alt="Chokas PMD Group LLC"></div>
       </div>
       <h2 style="text-align: center;">Customer Portal</h2>
-      <p style="text-align: center; margin-bottom: 32px; font-size: 0.9rem;">Access your lease agreements, payments, design documents, and maintenance requests.</p>
+      <p style="text-align: center; margin-bottom: 28px; font-size: 0.9rem;">Your project in one place: proposals, invoices, documents, photos, schedule and messages with our team.</p>
 
-      <form data-form="portal-login">
-        <div class="form-group">
-          <input type="email" placeholder="Email Address" required>
-        </div>
-        <div class="form-group">
-          <input type="password" placeholder="Password" required>
-        </div>
-        <button type="submit" class="form-submit">Sign In <span class="arrow">&rarr;</span></button>
-      </form>
+      <!-- 1. Sign-in button: opens JobTread's own sign-in page in a new tab -->
+      <a href="https://app.jobtread.com/sign-in" target="_blank" rel="noopener noreferrer" class="btn btn-primary jt-signin">
+        Sign In to Your Portal <span class="arrow">&rarr;</span>
+      </a>
+      <p class="jt-note">
+        No password needed most of the time: open the portal link in any project email from Chokas PMD and it signs you in.
+        Paying an invoice or using the mobile app needs a password,
+        <a href="https://www.jobtread.com/resources/help/customer-portal/create-a-password" target="_blank" rel="noopener noreferrer">create one here</a>.
+      </p>
 
-      <div style="text-align: center; margin-top: 24px;">
-        <a href="#" style="font-size: 0.85rem; color: var(--text-muted); transition: color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Forgot your password?</a>
-      </div>
-
-      <div style="margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border);">
-        <p style="font-size: 0.8rem; text-align: center; color: var(--text-muted); margin-bottom: 20px;">Quick Access</p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
-          <a href="#" class="btn btn-outline" style="font-size: 0.7rem; padding: 14px 16px; text-align: center; justify-content: center;">
-            <span>&#128196;</span> Pay Rent
-          </a>
-          <a href="#" class="btn btn-outline" style="font-size: 0.7rem; padding: 14px 16px; text-align: center; justify-content: center;">
-            <span>&#128203;</span> Documents
-          </a>
-          <a href="#" class="btn btn-outline" style="font-size: 0.7rem; padding: 14px 16px; text-align: center; justify-content: center;">
-            <span>&#128295;</span> Maintenance
-          </a>
-          <a href="#" class="btn btn-outline" style="font-size: 0.7rem; padding: 14px 16px; text-align: center; justify-content: center;">
-            <span>&#128222;</span> Contact
-          </a>
+      <!-- 2. What customers can do in the portal -->
+      <div class="jt-section">
+        <h3>What you can do in the portal</h3>
+        <div class="jt-features">
+          <a class="jt-feature" href="https://www.jobtread.com/resources/help/customer-portal/sign-a-proposal" target="_blank" rel="noopener noreferrer"><i>&#9997;</i><div><b>Sign proposals</b><span>Review and approve proposals and change orders online.</span></div></a>
+          <a class="jt-feature" href="https://www.jobtread.com/resources/help/customer-portal/pay-an-invoice" target="_blank" rel="noopener noreferrer"><i>&#128179;</i><div><b>Pay invoices</b><span>View invoices and pay for completed work.</span></div></a>
+          <a class="jt-feature" href="https://app.jobtread.com/sign-in" target="_blank" rel="noopener noreferrer"><i>&#128196;</i><div><b>Documents and photos</b><span>Plans, permits and progress photos for your job.</span></div></a>
+          <a class="jt-feature" href="https://app.jobtread.com/sign-in" target="_blank" rel="noopener noreferrer"><i>&#128197;</i><div><b>Schedule and daily logs</b><span>See what is done, what is next and site updates.</span></div></a>
+          <a class="jt-feature" href="https://www.jobtread.com/resources/help/customer-portal/send-a-message" target="_blank" rel="noopener noreferrer"><i>&#128172;</i><div><b>Message our team</b><span>One thread for every question about your project.</span></div></a>
+          <a class="jt-feature" href="https://www.jobtread.com/resources/help/customer-portal/jobtread-mobile-app" target="_blank" rel="noopener noreferrer"><i>&#128241;</i><div><b>Mobile app</b><span>Follow your project from your phone.</span></div></a>
         </div>
       </div>
 
-      <div class="portal-back" style="margin-top: 32px;">
+      <!-- 3. JobTread's customer-portal overview video (embed code from the JobTread Customer Marketing Kit) -->
+      <div class="jt-section">
+        <h3>New to the portal?</h3>
+        <p>A four-minute walkthrough from JobTread.</p>
+        <div class="jt-video">
+          <iframe src="https://player.vimeo.com/video/931164575?h=47af837853&color=5b8ab5&title=0&byline=0&portrait=0" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Using the JobTread Customer Portal"></iframe>
+        </div>
+        <div class="jt-links">
+          <a href="https://www.jobtread.com/resources/help/customer-portal" target="_blank" rel="noopener noreferrer">Portal help</a>
+          <a href="https://www.jobtread.com/resources/help/customer-portal/customize-notifications" target="_blank" rel="noopener noreferrer">Notification settings</a>
+          <a href="contact.html">Contact Chokas PMD</a>
+        </div>
+      </div>
+
+      <!-- 4. JobTread badge (Customer Marketing Kit, badge option 1, inverted for the dark theme) -->
+      <a class="jt-badge" href="https://www.jobtread.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://storage.googleapis.com/jobtread-public/downloads/marketing/customer-kit/experience-driven-by-jobtread-inverted.svg" alt="Experience Driven By JobTread">
+      </a>
+
+      <div class="portal-back" style="margin-top: 28px;">
         <a href="index.html">&larr; Back to chokaspmd.com</a>
       </div>
     </div>
