@@ -168,15 +168,15 @@ p.lead { font-size: 1.125rem; max-width: 560px; }
   line-height: 1;
 }
 .nav-logo img {
-  height: 41.4px; /* +15% (was 36px), 2026-10-13 */
+  height: 47.6px; /* +15% (was 41.4px), 2026-10-26; 36px before 2026-10-13 */
   width: auto;
   display: block;
   transition: opacity 0.3s var(--ease);
 }
-.nav.scrolled .nav-logo img { height: 36.8px; } /* +15% (was 32px) */
+.nav.scrolled .nav-logo img { height: 42.3px; } /* +15% (was 36.8px), 2026-10-26 */
 .nav-logo:hover img { opacity: 0.85; }
 
-.footer-brand .nav-logo img { height: 50.6px; /* +15% (was 44px) */ margin-bottom: 8px; }
+.footer-brand .nav-logo img { height: 58.2px; /* +15% (was 50.6px), 2026-10-26 */ margin-bottom: 8px; }
 .portal-login-card .nav-logo img { height: 55.2px; /* +15% (was 48px) */ margin: 0 auto; }
 .nav-links {
   display: flex;
