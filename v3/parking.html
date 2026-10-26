@@ -93,12 +93,12 @@
             <input type="text" name="_honey" class="form-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
             <h4 style="margin-bottom: 24px;">Parking Request</h4>
 
-            <div class="form-group"><input type="text" name="Name" placeholder="Your Name" autocomplete="name" required></div>
+            <div class="form-group"><input aria-label="Your Name" type="text" name="Name" placeholder="Your Name" autocomplete="name" required></div>
             <div class="form-row">
-              <div class="form-group"><input type="tel" name="Phone" placeholder="Phone Number" autocomplete="tel" required></div>
-              <div class="form-group"><input type="tel" name="Alternate phone" placeholder="Alternate Phone"></div>
+              <div class="form-group"><input aria-label="Phone Number" type="tel" name="Phone" placeholder="Phone Number" autocomplete="tel" required></div>
+              <div class="form-group"><input aria-label="Alternate Phone" type="tel" name="Alternate phone" placeholder="Alternate Phone"></div>
             </div>
-            <div class="form-group"><input type="email" name="email" placeholder="Email Address" autocomplete="email" required></div>
+            <div class="form-group"><input aria-label="Email Address" type="email" name="email" placeholder="Email Address" autocomplete="email" required></div>
 
             <div class="form-row">
               <div class="form-group">
@@ -125,19 +125,19 @@
               <span class="form-legend">Are you parking somewhere now?</span>
               <div class="form-choices"><label><input type="radio" name="Parking somewhere now" value="Yes"> Yes</label><label><input type="radio" name="Parking somewhere now" value="No"> No</label></div>
             </div>
-            <div class="form-group"><input type="text" name="Where you park now" placeholder="If so, where?"></div>
+            <div class="form-group"><input aria-label="If so, where?" type="text" name="Where you park now" placeholder="If so, where?"></div>
             <div class="form-group">
               <span class="form-legend">Set up an account? (speeds things up)</span>
               <div class="form-choices"><label><input type="radio" name="Set up an account" value="Yes"> Yes</label><label><input type="radio" name="Set up an account" value="No"> No</label></div>
             </div>
 
-            <div class="form-group"><input type="text" name="Equipment plate number" placeholder="Equipment license plate number(s)"></div>
+            <div class="form-group"><input aria-label="Equipment license plate number(s)" type="text" name="Equipment plate number" placeholder="Equipment license plate number(s)"></div>
             <div class="form-group">
               <label for="p-photos">Photos of the vehicle</label>
               <input type="file" id="p-photos" name="Vehicle photos" accept="image/*" multiple>
               <p class="form-note">Front, passenger door, driver door and trailer. Up to 10 MB in total; phone photos are fine.</p>
             </div>
-            <div class="form-group"><textarea name="Message" placeholder="Anything else we should know?" style="min-height: 90px;"></textarea></div>
+            <div class="form-group"><textarea aria-label="Anything else we should know?" name="Message" placeholder="Anything else we should know?" style="min-height: 90px;"></textarea></div>
             <button type="submit" class="form-submit">Send Parking Request <span class="arrow">&rarr;</span></button>
           </form>
         </div>

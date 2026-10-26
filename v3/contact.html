@@ -68,9 +68,9 @@
             <input type="text" name="_honey" class="form-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
             <h4 style="margin-bottom: 8px;">Schedule a Free Consultation</h4>
             <p style="margin-bottom: 24px; font-size: 0.9rem;">Tell us about your project and we'll connect you with the right team member within 24 hours.</p>
-            <div class="form-group"><input type="text" name="Name" placeholder="Your Name" autocomplete="name" required></div>
-            <div class="form-group"><input type="email" name="email" placeholder="Email Address" autocomplete="email" required></div>
-            <div class="form-group"><input type="tel" name="Phone" placeholder="Phone Number" autocomplete="tel"></div>
+            <div class="form-group"><input aria-label="Your Name" type="text" name="Name" placeholder="Your Name" autocomplete="name" required></div>
+            <div class="form-group"><input aria-label="Email Address" type="email" name="email" placeholder="Email Address" autocomplete="email" required></div>
+            <div class="form-group"><input aria-label="Phone Number" type="tel" name="Phone" placeholder="Phone Number" autocomplete="tel"></div>
             <div class="form-group">
               <select name="Interested in" aria-label="What are you interested in?">
                 <option value="">What are you interested in?</option>
@@ -87,18 +87,18 @@
                 <div class="form-group"><label for="c-start">Project start date</label><input type="date" id="c-start" name="Project start date"></div>
                 <div class="form-group"><label for="c-end">Projected completion date</label><input type="date" id="c-end" name="Projected completion date"></div>
               </div>
-              <div class="form-group"><input type="text" name="Budget for build" placeholder="Budget for the build (approximate)"></div>
+              <div class="form-group"><input aria-label="Budget for the build (approximate)" type="text" name="Budget for build" placeholder="Budget for the build (approximate)"></div>
               <div class="form-group"><label for="c-plans">Plans or specs (optional)</label><input type="file" id="c-plans" name="Plans or specs" multiple><p class="form-note">PDF, images or drawings. Up to 10 MB in total.</p></div>
             </fieldset>
 
             <fieldset class="form-fieldset" data-show-for="Property management" disabled>
-              <div class="form-group"><input type="text" name="Title or company" placeholder="Your title or company"></div>
-              <div class="form-group"><textarea name="Property address" placeholder="Property address (and type: office, warehouse, retail...)" style="min-height: 80px;"></textarea></div>
+              <div class="form-group"><input aria-label="Your title or company" type="text" name="Title or company" placeholder="Your title or company"></div>
+              <div class="form-group"><textarea aria-label="Property address (and type: office, warehouse, retail...)" name="Property address" placeholder="Property address (and type: office, warehouse, retail...)" style="min-height: 80px;"></textarea></div>
               <div class="form-group"><label for="m-docs">Property details (optional)</label><input type="file" id="m-docs" name="Property details" multiple><p class="form-note">Rent roll, photos or anything useful. Up to 10 MB in total.</p></div>
             </fieldset>
 
             <fieldset class="form-fieldset" data-show-for="Investment opportunities" disabled>
-              <div class="form-group"><input type="text" name="Title or company" placeholder="Your title or company"></div>
+              <div class="form-group"><input aria-label="Your title or company" type="text" name="Title or company" placeholder="Your title or company"></div>
               <div class="form-group"><label for="i-docs">Supporting documents (optional)</label><input type="file" id="i-docs" name="Supporting documents" multiple><p class="form-note">Up to 10 MB in total.</p></div>
             </fieldset>
 
@@ -106,7 +106,7 @@
               <p class="form-note" style="font-size: 0.9rem; margin: 0 0 16px;">To reserve a spot, the <a href="parking.html" style="color: var(--accent-light);">parking request form</a> takes your equipment details and photos in one go. A quick question works here too.</p>
             </fieldset>
 
-            <div class="form-group"><textarea name="Message" placeholder="Tell us about your project..."></textarea></div>
+            <div class="form-group"><textarea aria-label="Tell us about your project" name="Message" placeholder="Tell us about your project..."></textarea></div>
             <button type="submit" class="form-submit">Send Request <span class="arrow">&rarr;</span></button>
           </form>
         </div>
@@ -118,7 +118,7 @@
   <section style="padding: 0; height: 400px; background: var(--bg-card); display: flex; align-items: center; justify-content: center;">
     <div style="text-align: center;">
       <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">101 NW 8th St, Grand Prairie, TX 75050</p>
-      <a href="https://maps.google.com/?q=101+NW+8th+St+Grand+Prairie+TX+75050" target="_blank" class="btn-text" style="color: var(--accent);">Open in Google Maps <span class="arrow">&rarr;</span></a>
+      <a href="https://maps.google.com/?q=101+NW+8th+St+Grand+Prairie+TX+75050" target="_blank" rel="noopener" class="btn-text" style="color: var(--accent);">Open in Google Maps <span class="arrow">&rarr;</span></a>
     </div>
   </section>
 

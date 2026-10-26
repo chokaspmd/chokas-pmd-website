@@ -17,8 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
   if (toggle && links) {
+    toggle.setAttribute('aria-expanded', 'false');
     toggle.addEventListener('click', () => {
       links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', links.classList.contains('open') ? 'true' : 'false');
       const spans = toggle.querySelectorAll('span');
       if (links.classList.contains('open')) {
         spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
