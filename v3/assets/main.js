@@ -115,8 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const topic = interest && interest.value ? ' (' + interest.value + ')' : '';
         subject.value = 'chokaspmd.com: ' + base + topic + (nameEl && nameEl.value ? ' from ' + nameEl.value.trim() : '');
       }
-      const page = form.querySelector('input[name="Sent from"]');
-      if (page) page.value = window.location.href;
+      // "Sent from" stays the fixed page label in the HTML. A full page URL there made FormSubmit drop
+      // about.html submissions silently (generic "Thanks!" page, no email); tested 2026-10-26.
       const btn = form.querySelector('.form-submit');
       if (btn) { btn.disabled = true; btn.innerHTML = 'Sending&hellip;'; }
     });
